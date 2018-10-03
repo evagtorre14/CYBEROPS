@@ -1,0 +1,40 @@
+<ion-content padding>
+  <ion-grid text-center>
+    <ion-row class="claseFila">
+      <ion-col size="12" size-sm="8" size-lg="8">
+        <ion-card>
+          <img [src]="article.urlToImage"/>
+          <ion-card-content>
+            <ion-card-title>
+              {{article.title}}
+              </ion-card-title>
+            <p>
+              {{article.description}}
+            </p>
+          </ion-card-content>
+          <ion-icon name="checkmark-circle" class="icon"></ion-icon>
+          <ion-icon name="close-circle" class="icon2"></ion-icon>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-sm="4" size-lg="4"> 
+          <ion-card>
+              <ion-card-content [chart]="chart1">
+              </ion-card-content>
+
+              <ion-card-content [chart]="chart2">
+              </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-icon name="arrow-dropleft-circle" class="boton" (click)="goToNew()"></ion-icon>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+     
+      
+    
+    
+
+    
+

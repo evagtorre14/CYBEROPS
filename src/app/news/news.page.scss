@@ -1,0 +1,169 @@
+/* Fonts */
+/* PT Sans */
+
+/* /Fonts */
+
+/* General */
+ion-header{
+   
+    height: 5px;
+    
+    .icon_upm{
+       
+        margin-left: 5px;
+        display: block;
+        background-image: url(../../assets/imgs/logoUPM.png);
+       
+        background-repeat: no-repeat, repeat;
+        background-size: 100% auto;
+        width: 50PX;
+        height: 50px;
+    }
+    ion-title{
+            text-align: "center";
+            margin-left: 10%;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: absolute;
+            top: 10%;
+            font-family: 'trebuchet ms';
+            //font-style: italic;
+            color:  #006ec1;
+            font-size: 50px;
+            @media screen and (max-width:667px){
+                color:  red;
+                font-size: 25px;
+            
+            }
+            @media screen and (min-width:667px) and (max-width:1280px){
+                color:  yellow;
+                font-size: 40px;
+            
+            }
+            
+        }
+    ion-button{
+        font-size: 18px;
+        @media screen and (max-width:667px){
+            font-size: 8px;
+        
+        }
+        @media screen and (min-width:667px) and (max-width:1280px){
+            font-size: 15px;
+        
+        }
+    }
+    
+    .icon_search {
+        margin-top: 2%;
+        margin-right: 10%;
+        float:right;
+        display: block;
+        background-image: url(../../assets/imgs/icono-lupa.png);
+        background-position: center center;
+        background-repeat: no-repeat, repeat;
+        background-size: 100% auto;
+        width: 32px;
+        height: 32px;
+        
+    }
+}
+
+ion-content{
+   
+   
+   
+        .card-background-page {
+            margin-top:5%;
+            @media screen and (max-width:668px){
+                height:100px;
+            }
+            height:150px;
+            
+            ion-card {
+              position: relative;
+              text-align: center;
+            }
+          
+            .card-title {
+              position: absolute;
+              top: 25%;
+              font-size: 3.0em;
+              width: 100%;
+              font-weight: bold;
+              color: #fff;
+              @media screen and (max-width:668px){
+                  font-size: 1.0em;
+                  top:50%;
+              }
+              @media screen and (min-width:668px) and (max-width:1200px){
+                font-size: 2.0em;
+                top:25%;
+              }
+            
+            }
+
+          }
+        .letra{
+            font-size: 1.5rem;
+            font-family: 'trebuchet ms';
+            letter-spacing: 1px;
+        }
+    
+     
+    .rectangulo {
+        width: 75%; 
+        height: 85%;
+        border: 3px solid rgb(180, 207, 229);
+    }
+    .icon2{
+        width: 45PX;
+        height: 45px;
+        color: #006ec1;
+    }
+        
+   
+
+
+
+    
+
+  
+  }
+
+h2{
+    font-size: small;
+}
+.opciones{
+   float: right;
+
+}
+
+.container2{
+    margin-top: 0px;
+    height: 100%;
+}
+.aaa{
+    margin-top: 89px;
+    height: 80%;
+}
+
+
+
+
+
+
+
+
+.boton{
+    font-size:70px;
+ }
+ ion-card{
+     text-align: center;
+ }
+
+
+
+

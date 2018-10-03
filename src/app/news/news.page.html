@@ -1,0 +1,96 @@
+<ion-header>
+  	
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+              <i class="icon_upm"></i>
+          </ion-col>
+          <ion-col size="5.5">
+              
+              <ion-title class="page_title">{{tipoNoticias}}</ion-title>
+          </ion-col>
+          <ion-col size="1.5">
+              <ion-button color="primary" expand="full" (click)=changeToMedioambiente()>Medio<br> Ambiente </ion-button>
+            </ion-col>
+            <ion-col size="1.5">
+                <ion-button color="primary" expand="full" (click)=changeToEnergia()>Energía</ion-button>
+              </ion-col>
+              <ion-col size="1.5">
+                  <ion-button color="primary" expand="full" (click)=changeToFinanciero()>Finanzas</ion-button>
+                </ion-col>
+          
+          <ion-col size="1">
+            
+            <div>
+              <i class="icon_search"></i>
+            </div> 
+           
+             
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </ion-toolbar>
+</ion-header>
+
+  
+<ion-content>
+  <ion-grid class="grid1">
+      <ion-row class="card-background-page">
+          <ion-card  *ngFor= "let article of datos.articles">
+              <img src="../../assets/imgs/finanzas.jpg"/>
+              <div class="card-title">{{article.title}}</div>
+            </ion-card>
+      </ion-row>
+        
+      <ion-row>
+          <ion-col>
+            <ion-card *ngFor= "let article of datos.articles" (click)="onGoToSinglePage(article)">
+              <img [src]="article.urlToImage"/>
+              <div class="card-title">{{article.title}}</div>
+              <div class="card-subtitle">{{article.description}}}</div>
+            </ion-card>
+          </ion-col>
+
+          <ion-col>
+            <ion-row>
+              <ion-card  class="my-fixed-item">
+                <ion-card-content [chart]="chart1"></ion-card-content>
+              </ion-card>
+            </ion-row>
+              
+            <ion-row>
+                <ion-col>
+                    <div class="rectangulo">
+                      <ion-icon name="thermometer" class="icon2"></ion-icon>
+                      <br>
+                      Una acción que se podría llevar a cabo
+                    </div>
+                </ion-col>
+                <ion-col>
+                  <div class="rectangulo">
+                    <ion-icon name="thermometer" class="icon2"></ion-icon>
+                    <br>
+                    Una acción que se podría llevar a cabo
+                  </div>
+                </ion-col>
+            </ion-row>
+          
+          </ion-col>
+        
+      </ion-row>
+    
+  </ion-grid>
+</ion-content>
+
+  
+
+  
+  
+      
+      
+  
+         
+    
+  

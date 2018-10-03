@@ -1,0 +1,21 @@
+
+<ion-content class="card-background-page">
+
+  <ion-card class="aaa" *ngFor= "let article of datos.articles">
+    <img src="../assets/imgs/ordenador.jpg"/>
+    <ion-card class="card2">
+    <ion-card-header>
+      {{article.title}}
+    </ion-card-header>
+    <ion-card-content>
+     {{article.description}}
+    </ion-card-content>
+   </ion-card>
+  </ion-card>
+  
+ 
+  
+
+  
+</ion-content>
+<ion-icon name="arrow-dropleft-circle" class="boton" (click)="goToHome()"></ion-icon>
